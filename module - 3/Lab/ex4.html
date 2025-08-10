@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        margin: 0 auto;
+      }
+      .product-card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgb(0, 0, 0, 0.3);
+      }
+      .product-image {
+        height: 200px;
+        width: 100%;
+        object-fit: contain; 
+        /* object-fit:  is use to fit the image properly; */
+        border-radius: 5px;
+      }
+      .product-title {
+        font-size: 25px;
+        margin:10px 5px;
+        color: #333;
+      }
+
+      .product-price {
+        font-size: 20px;
+        color: #2ecc71;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="product-card">
+        <img
+          src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQmlChcEk6FLNcNSAX5Rz8NkS297Jyb0xnIJveeeEkL1DSABg92c4r3Mi_UdJcJC8QVw0jXFVrYuZS1Y4ue7wybmQ7Cb3f1fUlTXhHVRg3D"
+          alt="Product 1"
+          class="product-image"
+        />
+        <h2 class="product-title">boAt Rockerz 430</h2>
+        <p class="product-price">1,399 &#8377;</p>
+      </div>
+      <div class="product-card">
+        <img
+          src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSVZNMGB1B_GbYZcGRNuYe1teE51gPCpi4RF13HvZiqse1r13FyBJGlNWY5iLV36pzt6SsDWw2WBvlYNPTgH6FtuHkN5vSlx4YcT1K87SK7OVfEwBiX7iJ0Mjs"
+          alt="Product 2"
+          class="product-image"
+        />
+        <h2 class="product-title">Apple AirPods Max</h2>
+        <p class="product-price">59,990 &#8377;</p>
+      </div>
+      <div class="product-card">
+        <img
+          src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTXnPRUIZG7lOKn10JGFaFZLvljukvBjfO_yvKRb5d4g4z-YyjMwDj-jU7zA34CKpps5kHvbHI_a3-Sb8dGlQoY4vzUm0fjGp8XOY-M9diz4th7JqPeQmycN0s"
+          alt="Product 3"
+          class="product-image"
+        />
+        <h2 class="product-title">JBL Quantum 200 Wired Over-Ear</h2>
+        <p class="product-price">4,699 &#8377;</p>
+      </div>
+      <div class="product-card">
+        <img
+          src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQtaIR6SMrkK9sl8RzF5CdO8alLKZ-ao_jlWauYJRAeZA5WrKwLnapv9U9YX_ODANOB7eB0cbwEu27tyl0uih_UEZbFT518AiSDLTjL0hglSXmN3jBiY7T6"
+          alt="Product 4"
+          class="product-image"
+        />
+        <h2 class="product-title">
+          Zebronics Boom Wired Headphone Over Ear Mic
+        </h2>
+        <p class="product-price">799 &#8377;</p>
+      </div>
+      <div class="product-card">
+        <img
+          src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQfvS3K2daQMENHQPjN_B_iRFP31QSbH0HBh3YFaHTY8IIVRNGl-2AQXXU4lLkSz5RWVhQ1Ql2e9i3sjZZOGE3MlgeXOOAtVU5CYNBpAMzHoUvVqbaiRyhlCA"
+          alt="Product 5"
+          class="product-image"
+        />
+        <h2 class="product-title">Klipsch Reference On-Ear Headphones</h2>
+        <p class="product-price">11,899 &#8377;</p>
+      </div>
+      <div class="product-card">
+        <img
+          src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQCO6PvueQNBvHxYP8rXAMM7dn58Jgoqv0zjMbThd9_HC3W1uobaDJc_0TC7kD-w1LacKdP6sv1l_43yXfH1MBnioYtjOnwEgPYRG5ppeGMnTsJ79_njRtaSw"
+          alt="Product 6"
+          class="product-image"
+        />
+        <h2 class="product-title">Skullcandy Hesh ANC Bluetooth</h2>
+        <p class="product-price">5,999 &#8377;</p>
+      </div>
+      <div class="product-card">
+        <img
+          src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT9gH40QwRuRlVhXKmGRfqXMy0Z0S6rz6X_ygPVTIFh3sjot4r4PpiwCWSgjRHn35Hx6c6f9Zq5qgYqs5ak11yha42tJNWXbLZFJj624UkbC7sbhSFBtBsO"
+          alt="Product 7 "
+          class="product-image"
+        />
+        <h2 class="product-title">Beats Studio Pro Headphone</h2>
+        <p class="product-price">29,499 &#8377;</p>
+      </div>
+      <div class="product-card">
+        <img
+          src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSYgpJXu3k6CFy_AlFTaTmQ2Y5yEWoR8tThojr1jOX5fJkSDy2wQD_NLo_RlqPHwFsVjqoTTtHCi-6z8_JMRDHNpTEhyP8dipfMKUphUdNpsjHgInGOi66w"
+          alt="Product 8"
+          class="product-image"
+        />
+        <h2 class="product-title">Sony ULT WEAR WH-ULT900N</h2>
+        <p class="product-price">14,399 &#8377;</p>
+      </div>
+      <div class="product-card">
+        <img
+          src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSX4XbITc56C8sGjJl-4RxZFPpwMGpEVgtJbYqSZmZGIRsdubfBvEXw1U3J34f0oDgDa1GBlBESJEWkGqfybaqxNM3GL1vN-yO7LABdz1vfu9OL5IMGWBzQ4g"
+          alt="Product 9"
+          class="product-image"
+        />
+        <h2 class="product-title">HyperX Cloud II</h2>
+        <p class="product-price">4,499 &#8377;</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            height: 100%;
+            background: url("https://t4.ftcdn.net/jpg/08/35/24/29/240_F_835242940_zX4tXStyAlQevsXSg9hrTzRPDTSnFqt7.jpg");
+            background-size:cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content:center;
+            /* align-items:center; */
+            margin:100px auto;
+            
+        }
+        .main{
+            backdrop-filter:blur(20px);
+            background-color: rgba(255, 249, 249, 0.2);
+            height:500px;
+            width:400px;
+            border-radius: 10px;
+            border: 10px solid transparent;
+            box-shadow: 0 0 10px whitesmoke;
+            text-align: center;
+        }
+        #image-set{
+            height:250px;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+        }
+        img{
+            height: 200px;
+            width: 230px;
+            box-shadow: 0 0 2px black ;
+            border: 8px double transparent;
+            border-radius: 70%;
+        } 
+        .text-set{
+            height: 60px;
+            transform:translateY(-40px) ;
+            padding:10px;
+            margin:10px;
+            /* border: 2px solid black; */
+
+        }
+        .text-set h1{
+            margin-top:10px;
+            margin-bottom: 2px;
+        }
+        .text-set span{
+            font-size:18px;
+            color: gray;
+        }
+        .text-desc{
+            height: 50px;
+            border: 2px solid transparent;
+            box-shadow: 0 0 4px whitesmoke ;
+            transform:translateY(-40px) ;
+            font-size:16px;
+            padding:10px;
+        }
+        .follow{
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+         #button-property {
+            width: 150px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: linear-gradient(135deg, #4CAF50 0%, #2196F3 100%);
+            color: white;
+            border: 2px solid #3d8b40;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        }
+
+        #button-property:hover {
+            background-color: linear-gradient(135deg, #45a049 0%, #1976D2 100%);
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .fa-plus {
+            font-size: 15px;
+            margin-right: 8px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="image-set">
+            <img src="goku.jpg" alt="Img">
+        </div>
+        <div class="text-set">
+            <h1>Maharshi</h1>
+            <span>Web Developer</span>
+        </div>
+        <div class="text-desc">
+            <span>
+                Hello! I'm exploring web development and learning how to build beautiful interfaces using HTML and CSS. Just exploring how to build with HTML and CSS!
+            </span>
+        </div>
+        <div class="follow">
+            <button id="button-property"><i class="fa-solid fa-plus"></i>Follow</button>
+        </div>
+    </div>
+</body>
+</html>
