@@ -76,3 +76,29 @@ Execution.addEventListener("click",function(){
     Project.style.color = "#504A45"
     design.style.color = "#504A45"
 })
+
+const menuBtn = document.querySelector("#menu-btn");
+const mobileMenu = document.querySelector("#mobile-menu");
+const closeMenu = document.querySelector("#close-menu");
+
+// OPEN MENU
+
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.add("active");
+});
+
+// CLOSE MENU
+
+closeMenu.addEventListener("click", () => {
+  mobileMenu.classList.remove("active");
+});
+
+// CLOSE ON LINK CLICK
+
+document.querySelectorAll(".mobile-links a").forEach((link) => {
+
+  link.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+  });
+
+});
