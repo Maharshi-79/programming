@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "id": "3",
+      "name": "Amit Verma 12",
+      "email": "amit@example.com",
+      "password": "amit123",
+      "status": "Block",
+      "mobile": "9824045767"
+    },
+    {
+      "id": "1774080907285",
+      "name": "MAHARSHI CHAUHAN",
+      "email": "maharshichauhan.23.imsc@iict.indusuni.ac.in",
+      "password": "123456789",
+      "mobile": "9824045767",
+      "status": "Block"
+    },
+    {
+      "id": "1774080951504",
+      "name": "rajesh",
+      "email": "r@gmail.com",
+      "password": "1233332",
+      "mobile": "123211324",
+      "status": "Unblock"
+    }
+  ],
+  "admin": [
+    {
+      "id": "111456789",
+      "name": "admin",
+      "password": "1234",
+      "email": "admin@gmail.com",
+      "status": "Unblock"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

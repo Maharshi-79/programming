@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>View Guests</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<div class="container py-5">
+  <div class="card shadow">
+    <div class="card-body">
+
+      <h3 class="text-center mb-4">Guest Records</h3>
+
+      <input type="text" id="search" class="form-control mb-3" placeholder="Search by name or date">
+
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+          <thead class="table-dark">
+            <tr>
+              <th>Name</th>
+              <th>Phone</th>
+              <th>Check-in</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+
+      <a href="index.html" class="btn btn-secondary mt-3">Back</a>
+
+    </div>
+  </div>
+</div>
+
+<script type="module" src="viewer.js"></script>
+</body>
+</html>

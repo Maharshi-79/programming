@@ -1,0 +1,20 @@
+react redux 
+ create project
+
+npm install @reduxjs/toolkit react-redux
+
+
+create app -> app.jsx
+
+
+React          Redux
+
+useRedycer -- useSlicer
+
+
+
+useSelector - State
+
+Dispatch --  Action 
+
+store ni andar { } nahi ave import mma 

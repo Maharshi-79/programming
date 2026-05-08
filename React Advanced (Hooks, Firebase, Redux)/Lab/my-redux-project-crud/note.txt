@@ -1,0 +1,20 @@
+
+step1 
+
+
+store.js
+set up slicers
+
+step 2
+ theme integration
+
+ step3 
+  redux store setup
+
+
+step 4 
+routing
+
+step 5 json server
+
+step 6 axios
