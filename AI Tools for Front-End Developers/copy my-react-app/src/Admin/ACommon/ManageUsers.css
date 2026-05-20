@@ -1,0 +1,89 @@
+/* Direct replacement for your current ManageUsers.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600&display=swap');
+
+h3.mb-4.text-warning {
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+
+  /* 🔥 Gradient Text */
+  background: linear-gradient(135deg, #c97e2c, #e3a018);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* 🟡 Left Accent Border */
+  border-left: 5px solid #e3a018;
+  padding-left: 14px;
+
+  margin-bottom: 1.5rem;
+  display: inline-block;
+
+  padding: 14px 20px;
+  
+}
+
+.table {
+  background: rgba(255, 255, 245, 0.9);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.08);
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table-dark {
+  background: #f3ede5 !important;
+  color: #3b2a1f;
+  border-bottom: 2px solid #e3a018;
+}
+
+.table-dark th {
+  background: #f3ede5;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.table tbody tr:hover {
+  background: #fffaf2 !important;
+  transform: none;
+}
+
+.badge {
+  padding: 4px 12px;
+  border-radius: 40px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.bg-primary {
+  background: #e9e0d5 !important;
+  color: #5e4b36;
+}
+
+.bg-danger {
+  background: #f5d7cf !important;
+  color: #bc4e2c;
+}
+
+.bg-success {
+  background: #d9e6c3 !important;
+  color: #3a6741;
+}
+
+.btn-warning {
+  background: transparent;
+  border: 1px solid #e3a018;
+  padding: 6px 16px;
+  border-radius: 40px;
+  color: #b3621e;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-warning:hover {
+  background: #e3a018;
+  color: #1e1a16;
+  transform: translateY(-1px);
+}

@@ -1,0 +1,91 @@
+.main-div {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("/images/img1.jpg")
+    no-repeat center center/cover;
+}
+
+/* Center layout */
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.auth-card {
+  width: 425px;
+  padding: 25px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Title */
+.auth-title {
+  text-align: center;
+  font-family: cursive;
+  margin-bottom: 10px;
+}
+
+/* Inputs */
+.auth-card input {
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Button */
+.auth-btn {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #ff5722;
+  border: none;
+  color: white;
+  padding: 10px;
+}
+
+.auth-btn:hover {
+  background-color: #e64a19;
+}
+
+/* Toggle link */
+.toggle-link {
+  text-align: center;
+  margin-top: 10px;
+  color: #ffc107;
+  cursor: pointer;
+}
+
+/* 🍕 FOOD ICON ANIMATION */
+.food-icon {
+  position: absolute;
+  font-size: 22px;
+  opacity: 0.8;
+  animation: float 6s linear infinite;
+}
+
+/* Different positions */
+.icon1 { top: 10%; left: 10%; animation-delay: 0s; }
+.icon2 { top: 20%; right: 10%; animation-delay: 2s; }
+.icon3 { bottom: 15%; left: 15%; animation-delay: 4s; }
+.icon4 { bottom: 10%; right: 15%; animation-delay: 1s; }
+
+/* Floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 0.6;
+  }
+}

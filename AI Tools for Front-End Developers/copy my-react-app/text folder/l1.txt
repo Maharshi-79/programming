@@ -1,0 +1,174 @@
+<div className="row grid">
+          {menu.map((item) => (
+            <FoodCard key={item.id} item={item} />
+          ))}
+        </div>
+
+
+menu is an array of food items, and FoodCard is a component that takes an item as a prop and displays its details. The code is rendering a grid of food cards based on the items in the menu array. Each card will have a unique key based on the item's id to help React efficiently update the list when changes occur.
+
+and { } --> anything written inside the curly braces is treated as JavaScript code. In this case, we are using the map function to iterate over the menu array and render a FoodCard component for each item in the array. The key prop is used to give each card a unique identifier, which helps React optimize rendering and updating of the list.
+
+why we have used item={item} in the FoodCard component?
+
+The `item={item}` syntax is used to pass the current item from the `menu` array as a prop to the `FoodCard` component. This allows the `FoodCard` component to access the details of the food item (such as its name, price, description, etc.) and display them accordingly. By passing the item as a prop, we can make the `FoodCard` component reusable for any food item in the menu, allowing it to dynamically render the information based on the item it receives.
+
+
+
+
+Great question bro 👌🔥
+This is **CORE React concept** — once you get this, props will never confuse you again.
+
+---
+
+## 1️⃣ Why `item={item}` ?
+
+```jsx
+<FoodCard item={item} />
+```
+
+This means:
+
+👉 **Left `item`** = prop name
+👉 **Right `item`** = variable from `map()`
+
+Think like **key–value pair** 👇
+
+```js
+{
+  item: item
+}
+```
+
+Same as writing:
+
+```js
+<FoodCard item={item} />
+// propName = value
+```
+
+You can rename it if you want:
+
+```jsx
+<FoodCard food={item} />
+```
+
+Then in component:
+
+```jsx
+function FoodCard({ food }) { ... }
+```
+
+---
+
+## 2️⃣ Why `({ item })` in FoodCard.jsx ?
+
+### Normal way (without destructuring)
+
+```jsx
+function FoodCard(props) {
+  return <h3>{props.item.title}</h3>;
+}
+```
+
+Here:
+
+* `props` = `{ item: {...} }`
+* You must write `props.item`
+
+---
+
+### Clean way (WITH destructuring) ✅
+
+```jsx
+function FoodCard({ item }) {
+  return <h3>{item.title}</h3>;
+}
+```
+
+This is just **JavaScript destructuring**, not React magic.
+
+Equivalent to:
+
+```js
+const props = { item: {...} };
+const item = props.item;
+```
+
+---
+
+## 3️⃣ Why names are same (`item={item}`) ?
+
+Because:
+
+* **Outer `item`** → from `menu.map((item) => ...)`
+* **Inner `{ item }`** → prop name you chose
+
+They **do not have to be same** ❌
+
+Example:
+
+```jsx
+<FoodCard data={item} />
+```
+
+Then:
+
+```jsx
+function FoodCard({ data }) {
+  return <h3>{data.title}</h3>;
+}
+```
+
+---
+
+## 4️⃣ Real-life analogy 🧠
+
+Think FoodCard is a **delivery box** 📦
+
+```jsx
+<FoodCard item={pizza} />
+```
+
+Means:
+
+> “Put pizza inside box and label it as `item`”
+
+Inside FoodCard:
+
+```js
+({ item })
+```
+
+Means:
+
+> “Open box and take out `item`”
+
+---
+
+## 5️⃣ Why we don’t write `{item={item}}` inside component?
+
+Because JSX **passes props automatically**
+
+React internally does:
+
+```js
+FoodCard({ item: item });
+```
+
+---
+
+## ✅ FINAL ONE-LINE ANSWER
+
+> `item={item}` passes data as a prop
+> `({ item })` extracts that prop using destructuring
+
+---
+
+If you want, next I can explain:
+
+* 🔥 props vs state
+* 🔥 destructuring with multiple props
+* 🔥 same thing in jQuery
+
+Just tell me bro 😎

@@ -1,0 +1,120 @@
+{
+  "menu": [
+    {
+      "id": "1",
+      "title": "Delicious Pizza",
+      "category": "pizza",
+      "price": "199",
+      "image": "/images/f1.png",
+      "description": "hello this is pizza yummy piza prince"
+    },
+    {
+      "id": "2",
+      "title": "Delicious Burger",
+      "category": "burger",
+      "price": 15,
+      "image": "/images/f2.png",
+      "description": "Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit."
+    },
+    {
+      "id": "3",
+      "title": "Delicious Pizza",
+      "category": "pizza",
+      "price": "205",
+      "image": "/images/f3.png",
+      "description": "Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit."
+    },
+    {
+      "id": "4",
+      "title": "Delicious Pasta",
+      "category": "pasta",
+      "price": 18,
+      "image": "/images/f4.png",
+      "description": "Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit."
+    },
+    {
+      "id": "5",
+      "title": "French Fries",
+      "category": "fries",
+      "price": 10,
+      "image": "/images/f5.png",
+      "description": "Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit."
+    },
+    {
+      "id": "6",
+      "title": "Delicious Pizza",
+      "category": "pizza",
+      "price": 15,
+      "image": "/images/f6.png",
+      "description": "Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit."
+    },
+    {
+      "id": "7",
+      "title": "Tasty Burger",
+      "category": "burger",
+      "price": 12,
+      "image": "/images/f7.png",
+      "description": "Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit."
+    },
+    {
+      "id": "8",
+      "title": "Tasty Burger",
+      "category": "burger",
+      "price": 14,
+      "image": "/images/f8.png",
+      "description": "SHAURYA"
+    },
+    {
+      "id": "9",
+      "title": "Delicious Pasta",
+      "category": "pasta",
+      "price": 10,
+      "image": "/images/f9.png",
+      "description": "Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit."
+    }
+  ],
+  "users": [
+    {
+      "id": "84fb",
+      "name": "sumit222",
+      "email": "maharshichauhan.23.imsc@iict.indusuni.ac.in",
+      "password": "12345678",
+      "status": "unblock",
+      "role": "user"
+    },
+    {
+      "id": "2c07",
+      "name": "MAHARSHI KALPESHKUMAR CHAUHAN",
+      "email": "admin@gmail.com",
+      "password": "12345678",
+      "status": "blocked",
+      "role": "admin"
+    },
+    {
+      "id": "d21b",
+      "name": "sumit222",
+      "email": "h@gmail.com",
+      "password": "12345678",
+      "status": "unblock",
+      "role": "user"
+    },
+    {
+      "id": "a1b2",
+      "name": "Super Admin",
+      "email": "superadmin@gmail.com",
+      "password": "admin123",
+      "status": "unblock",
+      "role": "admin"
+    },
+    {
+      "id": "1361",
+      "name": "MAHARSHI KALPESHKUMAR CHAUHAN",
+      "email": "mercy7009@gmail.com",
+      "password": "12345678",
+      "role": "user",
+      "status": "unblock"
+    }
+  ],
+  "bookings": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}

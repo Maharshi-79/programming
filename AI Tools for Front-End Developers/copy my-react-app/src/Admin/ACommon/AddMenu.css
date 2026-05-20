@@ -1,0 +1,154 @@
+/* 🌆 Page Background - Elegant Dark Restaurant */
+.menu-page {
+  min-height: 100vh;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 28px;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* 🍽️ Heading */
+.menu-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 45px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #f4a261;
+  text-shadow: 0 4px 15px rgba(244, 162, 97, 0.3);
+  position: relative;
+}
+
+.menu-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 3px;
+  background: linear-gradient(to right, #f4a261, #e76f51);
+  border-radius: 3px;
+}
+
+/* 🧾 Card */
+.menu-card {
+  width: 100%;
+  max-width: 920px;
+  padding: 50px 55px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 920px;
+}
+
+/* 🔹 Form Controls - Consistent Padding & Height */
+.menu-input,
+.menu-select,
+.menu-textarea {
+  width: 100%;
+  border-radius: 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  padding: 16px 20px !important;           /* Proper padding for all */
+  font-size: 15.5px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #1a1a2e;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  height: auto;
+  min-height: 52px;                        /* Consistent height */
+}
+
+/* Fix for Select Dropdown (Bootstrap override) */
+.menu-select {
+  padding: 16px 20px !important;           /* Extra force for select */
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%231a1a2e' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592c.86 0 1.32 1.013.753 1.658l-4.796 5.482a1 1 0 01-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 12px;
+}
+
+/* Focus Effect */
+.menu-input:focus,
+.menu-select:focus,
+.menu-textarea:focus {
+  border-color: #f4a261 !important;
+  box-shadow: 0 0 0 4px rgba(244, 162, 97, 0.25) !important;
+  outline: none;
+}
+
+/* Textarea Specific */
+.menu-textarea {
+  resize: vertical;
+  min-height: 120px;
+  padding: 16px 20px !important;
+}
+
+/* 🖼️ Image Preview */
+.menu-image-preview {
+  width: 100%;
+  max-width: 340px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 18px auto 12px;
+  display: block;
+  border: 3px solid #f4a261;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+/* 🔘 Button */
+.menu-btn {
+  background: linear-gradient(45deg, #f4a261, #e76f51);
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  border-radius: 12px;
+  padding: 17px 0;
+  width: 100%;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+  margin-top: 10px;
+}
+
+.menu-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 35px rgba(231, 111, 81, 0.5);
+}
+div label{
+    margin-top:5px;
+    font-size: larger;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .menu-page {
+    padding: 30px 15px;
+  }
+  .menu-heading {
+    font-size: 1.95rem;
+  }
+  .menu-card {
+    padding: 35px 30px;
+  }
+  .menu-input,
+  .menu-select,
+  .menu-textarea {
+    padding: 14px 18px !important;
+    font-size: 15px;
+    min-height: 50px;
+  }
+}
